@@ -30,7 +30,7 @@
     }
   },
   "lint-staged": {
-    "*": "npm run lint"
+    "*.{js,ts}": "npm run lint"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.8.1",
