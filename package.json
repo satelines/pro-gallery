@@ -27,15 +27,15 @@
     "test:all": "npm run test && npm run test:e2e",
     "patch": "npm run lint && npm run test:all && node scripts/releaseVersion --patch",
     "minor": "npm run lint && npm run test:all && node scripts/releaseVersion --minor",
-    "major": "npm run lint && npm run test:all && node scripts/releaseVersion --major"
+    "major": "npm run lint && npm run test:all && node scripts/releaseVersion --major",
+    "precommit": "npm-run-all precommit:*",
+    "precommit:layouts": "cd packages/layouts && npm run lint",
+    "precommit:lib": "cd packages/lib && npm run lint"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run precommit"
     }
-  },
-  "lint-staged": {
-    "*.{js,ts}": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -55,6 +55,7 @@
     "lerna-packages": "0.0.1",
     "lint-staged": "^10.5.2",
     "lodash": "^4.17.4",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.1.2",
     "prompt": "^1.0.0",
     "semver": "^6.3.0"
