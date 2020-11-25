@@ -31,7 +31,8 @@
     "precommit:layouts": "cd packages/layouts && npm run lint",
     "precommit:lib": "cd packages/lib && npm run lint",
     "precommit:gallery": "cd packages/gallery && npm run lint",
-    "precommit:playground": "cd packages/playground && npm run lint"
+    "precommit:playground": "cd packages/playground && npm run lint",
+    "precommit:ssr-simulator": "cd packages/ssr-simulator && npm run lint"
   },
   "husky": {
     "hooks": {
@@ -42,7 +43,8 @@
     "packages/layouts/{src,test}/**/*.{js,ts}": "npm run precommit:layouts",
     "packages/lib/{src,test}/**/*.{js,ts}": "npm run precommit:lib",
     "packages/gallery/{src,tests}/**/*.{js,ts}": "npm run precommit:gallery",
-    "packages/playground/src/**/*.{js,ts}": "npm run precommit:playground"
+    "packages/playground/src/**/*.{js,ts}": "npm run precommit:playground",
+    "packages/ssr-simulator/src/**/*.{js,ts}": "npm run precommit:ssr-simulator"
   },
   "repository": {
     "type": "git",
