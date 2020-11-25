@@ -13,7 +13,7 @@ import LeanGallery, {
 } from './leanGallery/leanGallery';
 
 export default class BaseGallery extends React.Component {
-  static propTypes = basePropTypes;
+  static propTypes =   basePropTypes;
   render() {
     const domId = this.props.domId || 'default-dom-id';
     const {

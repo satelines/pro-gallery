@@ -39,8 +39,10 @@
     }
   },
   "lint-staged": {
+    "packages/layouts/**/*": "npm run precommit:layouts",
     "packages/lib/**/*": "npm run precommit:lib",
-    "packages/layouts/**/*": "npm run precommit:layouts"
+    "packages/gallery/**/*": "npm run precommit:gallery",
+    "packages/playground/**/*": "npm run precommit:playground"
   },
   "repository": {
     "type": "git",
