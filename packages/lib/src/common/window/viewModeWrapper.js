@@ -3,7 +3,7 @@ import FORM_FACTOR from '../constants/formFactor';
 
 class ViewModeWrapper {
   constructor() {
-    this.setViewMode =     this.setViewMode.bind(this);
+    this.setViewMode =    this.setViewMode.bind(this);
     this.isSiteMode = this.isSiteMode.bind(this);
     this.isEditMode = this.isEditMode.bind(this);
     this.isPrerenderMode = this.isPrerenderMode.bind(this);
