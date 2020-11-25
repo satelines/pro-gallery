@@ -64,7 +64,6 @@
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-flexbugs-fixes": "^4.1.0",
     "postcss-loader": "^3.0.0",
-    "prettier": "^2.1.2",
     "pro-gallery": "2.2.27",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
@@ -86,6 +85,9 @@
     "webpack-node-externals": "^1.7.2"
   },
   "devDependencies": {
-    "eslint-config-react-app": "^6.0.0"
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.2.0"
   }
 }
