@@ -41,7 +41,7 @@
   "lint-staged": {
     "packages/layouts/{src,test}/**/*.{js,ts}": "npm run precommit:layouts",
     "packages/lib/{src,test}/**/*.{js,ts}": "npm run precommit:lib",
-    "packages/gallery/{src,test}/**/*.{js,ts}": "npm run precommit:gallery",
+    "packages/gallery/{src,tests}/**/*.{js,ts}": "npm run precommit:gallery",
     "packages/playground/src/**/*.{js,ts}": "npm run precommit:playground"
   },
   "repository": {
