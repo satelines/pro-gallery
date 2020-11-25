@@ -28,14 +28,19 @@
     "patch": "npm run lint && npm run test:all && node scripts/releaseVersion --patch",
     "minor": "npm run lint && npm run test:all && node scripts/releaseVersion --minor",
     "major": "npm run lint && npm run test:all && node scripts/releaseVersion --major",
-    "precommit": "npm-run-all precommit:*",
-    "precommit:layouts": "cd packages/layouts && npm run precommit",
-    "precommit:lib": "cd packages/lib && npm run precommit"
+    "precommit:layouts": "cd packages/layouts && npm run lint",
+    "precommit:lib": "cd packages/lib && npm run lint",
+    "precommit:gallery": "cd packages/gallery && npm run lint",
+    "precommit:playground": "cd packages/playground && npm run lint"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run precommit"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "packages/lib/**/*": "npm run precommit:lib",
+    "packages/layouts/**/*": "npm run precommit:layouts"
   },
   "repository": {
     "type": "git",
