@@ -117,7 +117,7 @@ export function useGalleryContext(
   };
 
   const setGalleryReady = (galleryReady) => {
-       setContext({ galleryReady });
+        setContext({ galleryReady });
   };
 
   const setGallerySettings = (_gallerySettings) => {
