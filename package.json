@@ -39,10 +39,10 @@
     }
   },
   "lint-staged": {
-    "packages/layouts/**/*": "npm run precommit:layouts",
-    "packages/lib/**/*": "npm run precommit:lib",
-    "packages/gallery/**/*": "npm run precommit:gallery",
-    "packages/playground/**/*": "npm run precommit:playground"
+    "packages/layouts/{src,test}/**/*.{js,ts}": "npm run precommit:layouts",
+    "packages/lib/{src,test}/**/*.{js,ts}": "npm run precommit:lib",
+    "packages/gallery/{src,test}/**/*.{js,ts}": "npm run precommit:gallery",
+    "packages/playground/src/**/*.{js,ts}": "npm run precommit:playground"
   },
   "repository": {
     "type": "git",
