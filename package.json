@@ -29,8 +29,8 @@
     "minor": "npm run lint && npm run test:all && node scripts/releaseVersion --minor",
     "major": "npm run lint && npm run test:all && node scripts/releaseVersion --major",
     "precommit": "npm-run-all precommit:*",
-    "precommit:layouts": "cd packages/layouts && npm run lint",
-    "precommit:lib": "cd packages/lib && npm run lint"
+    "precommit:layouts": "cd packages/layouts && npm run precommit",
+    "precommit:lib": "cd packages/lib && npm run precommit"
   },
   "husky": {
     "hooks": {
