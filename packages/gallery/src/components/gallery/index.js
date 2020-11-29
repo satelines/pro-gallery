@@ -15,6 +15,7 @@ import LeanGallery, {
 export default class BaseGallery extends React.Component {
   static propTypes = basePropTypes;
   render() {
+    console.log('TESTTTTTTTTTTTT');
     const domId = this.props.domId || 'default-dom-id';
     const {
       styles,
