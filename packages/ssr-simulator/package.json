@@ -13,6 +13,7 @@
     "test": " ",
     "start:prod": "node scripts/startProd.js",
     "lint": "eslint src/**/*.js",
+    "lint:fix": "npm run lint -- --fix",
     "format": "prettier --write \"src/**/*.{js,json,css,md}\"",
     "docker:build": "docker build --rm -t cullenjett/react-ssr-boilerplate .",
     "docker:start": "docker run --rm -it -p 3000:3000 cullenjett/react-ssr-boilerplate",
